@@ -1,0 +1,4 @@
+<!DOCTYPE html>
+<header>INICIO</header>
+<body>desarrollo</body>
+<footer>fin</footer>
