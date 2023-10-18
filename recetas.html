@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Recetas Culinarias</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid.css">
+    <link rel="icon" href="fotos/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="fotos/favicon.ico" type="image/x-icon" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.hoverIntent.minified.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <!-- Incluye el archivo JavaScript externo -->
+    <script src="js/interaccion.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <header>
+                <h1><a href="Inicio.html"><strong>Recetas culinarias</strong><span>Para todos los gustos </span></a>
+                </h1>
+                <nav>
+                    <ul class="sf-menu">
+                        <li><a href="#">Recetas</a>
+                            <ul>
+                                <li><a href="#">Listado</a></li>
+                                <li><a href="#">Agregar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Nosotros.html">Sobre nosotros</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+        </div>
+        <section id="content">
+                <!-- Cuadro central responsivo para mostrar recetas -->
+                
+                <div class="box" id="recetasContainer">
+                    <div class="buttons2">
+                        <a href="#" data-type="submit" class="button-1" onclick="mostrarRecetas()">Cargar<span></span></a>
+                        <div class="clear"></div>
+                    </div>
+                    <span class="title-box">Recetas</span>
+                    <div id="recetas"></div>
+                    <div class="buttons2">
+                        <a href="#" data-type="submit" class="button 1" onclick="limpieza()">elminar<span></span></a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+</body>
+
+</html>
