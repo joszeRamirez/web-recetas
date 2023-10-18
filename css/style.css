@@ -430,14 +430,14 @@ h3 a:hover {
 	position: relative;
 	z-index: 2;
 	background: url(../fotos/bg-head.png) 0 top repeat-x;
-	padding-top: 11px;
+	padding-top: 20px;
 }
 
 header {
 	width: 950px;
 	margin: 0 auto;
 	position: relative;
-	padding-bottom: 14px;
+	padding-bottom: 20px;
 }
 
 /*********************************content*************************************/
