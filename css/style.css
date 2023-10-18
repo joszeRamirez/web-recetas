@@ -96,6 +96,11 @@ body {
 	line-height: 20px;
 }
 
+.fontejusto {
+	font-size: 14px;
+	text-align: justify;
+}
+
 .color {
 	color: #575757;
 }
@@ -172,7 +177,8 @@ body {
 }
 
 .padd-3 {
-	margin: 39px 0 22px 0;
+	margin: 39px 0 32px 0;
+
 }
 
 .top {
@@ -437,7 +443,7 @@ header {
 	width: 950px;
 	margin: 0 auto;
 	position: relative;
-	padding-bottom: 20px;
+	padding-bottom: 35px;
 }
 
 /*********************************content*************************************/
@@ -539,7 +545,7 @@ header {
 .box {
 	background: #fff;
 	border-radius: 23px;
-	padding: 41px 22px 28px 22px;
+	padding: 47px 22px 28px 22px;
 	margin: -12px 0 0 0;
 	color: #b1aa9b;
 }
@@ -645,7 +651,7 @@ header {
 
 .carousel {
 	width: 680px !important;
-	overflow: hidden;
+	overflow: scroll;
 
 }
 
@@ -707,7 +713,7 @@ header {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	height: 15px;
-	width: 139px;
+	width: 500px;
 	float: left;
 	border: 1px solid #d9d8ce;
 	position: relative;
@@ -716,12 +722,12 @@ header {
 
 #form1 textarea {
 	overflow: auto;
-	width: 139px;
+	width: 500px;
 	height: 152px;
 	resize: none;
 	float: left;
 	color: #b1aa9b;
-	padding: 7px 0 0 9px;
+	padding: 7px 0 7px 9px;
 	background: #fff;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;

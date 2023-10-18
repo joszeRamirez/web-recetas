@@ -18,14 +18,6 @@
     <!--Codigo anexado o incluido -->
     <script src="js/interaccion.js"></script>
     
-    <script>
-        $(window).load(function () {
-            $().UItoTop({ easingType: 'easeOutQuart' });
-            $('#form1').forms({
-                ownerEmail: '#'
-            })
-        });
-    </script>
 </head>
 
 <body>
@@ -38,8 +30,8 @@
                     <ul class="sf-menu">
                         <li><a href="#">Recetas</a>
                             <ul>
-                                <li><a href="#">Listado</a></li>
-                                <li><a href="#">Agregar</a></li>
+                                <li><a href="recetas.html">Listado</a></li>
+                                <li><a href="formulario.html">Agregar</a></li>
                             </ul>
                         </li>
                         <li><a href="Nosotros.html">Sobre nosotros</a></li>
@@ -60,7 +52,7 @@
                                 </div>
                                 <label>Nombre de la receta: </label>
                                 <label class="name wrapper-after">
-                                    <input type="text" value="Nombre:" id="nombre">
+                                    <input type="text" value="Nombre" id="nombre">
                                     <span class="error error-empty">*No es un nombre válido.</span> <span
                                         class="empty error-empty">*Este campo es requerido.</span>
                                 </label>
@@ -81,14 +73,14 @@
                                 <div class="clear"></div>
                                 <label>Nombre del autor: </label>
                                 <label class="name wrapper-after">
-                                    <input type="text" value="Autor:" id="autor">
+                                    <input type="text" value="Autor" id="autor">
                                     <span class="error error-empty">*No es un nombre válido.</span> <span
                                         class="empty error-empty">*Este campo es requerido.</span>
                                 </label>
         
                                 <div class="clear"></div>
                                 <div class="buttons2">
-                                    <a href="#" data-type="submit" class="button-1" onclick="agregarReceta()">Agregar<span></span></a>
+                                    <a href="recetas.html" class="button-1" onclick="agregarReceta()">Agregar<span></span></a>
                                     <div class="clear"></div>
                                 </div>
                                 <div class="clear"></div>

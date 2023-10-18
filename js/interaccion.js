@@ -1,6 +1,7 @@
 // Obtener referencia al formulario y la sección de recetas
 const formularioReceta = document.getElementById('form1');
 const seccionRecetas = document.getElementById('recetas');
+const recetasGuardadas = document.querySelector('.lista-recetas');
 
 // Función para agregar una nueva receta
 function agregarReceta() {
@@ -46,7 +47,7 @@ function mostrarRecetas() {
     // Construir el HTML para mostrar las recetas
     const htmlRecetas = recetasGuardadas.map(receta => `
         <div>
-            <h3>${receta.nombre}</h3>
+            <h3 class="top-1">${receta.nombre}</h3>
             <p><strong>Ingredientes:</strong> ${receta.ingredientes}</p>
             <p><strong>Instrucciones:</strong> ${receta.instrucciones}</p>
             <p><strong>Autor:</strong> ${receta.autor}</p>
@@ -57,8 +58,12 @@ function mostrarRecetas() {
     
     const recetasContainer = document.getElementById('recetas');
     recetasContainer.innerHTML = htmlRecetas;
+
 }
 
+function detalleReceta(){
+
+}
 // Mostrar las recetas existentes al cargar la página --> mostrarRecetas();
 
 function limpieza() {
@@ -68,3 +73,4 @@ function limpieza() {
     // Mostrar las recetas (puedes llamar a mostrarRecetas directamente si es necesario)
     mostrarRecetas();
 }
+mostrarRecetas()
