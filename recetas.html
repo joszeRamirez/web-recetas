@@ -30,6 +30,11 @@
         recetas: any;
         this.recetas
     </script>
+    <script>
+        $(document).load(function () {
+            mostrarRecetas();
+        });
+    </script>
 </head>
 
 <body>
@@ -57,12 +62,14 @@
                 <div class="wrapper bg-wrapper">
                     <div class="grid_17 suffix_1">
                         <h2 class="padd-3">Lista de Recetas</h2>
-                        
+
                         <!-- Agrega este cuadro de búsqueda con un botón en tu HTML -->
-                        <div class="search-box">
-                            <label for="search">Buscar receta por nombre:</label>
-                            <input type="text" id="search">
-                            <button onclick="buscarReceta()">Buscar</button>
+                        <div>
+                            <h3 class="grid_17" for="search">Buscar receta por nombre: <input class="name wrapper-after"
+                                    type="text" id="search"><span class="empty error-empty">*El campo está vacío.</span>
+                                <button class="button" onclick="buscarReceta()">Buscar</button>
+                            </h3>
+
                         </div>
                         <div id="resultadosBusqueda" class="box">
                             <span class="title-box">Resultados de la búsqueda</span>
@@ -71,42 +78,43 @@
                         <div class="main-carousel">
 
                             <div class="carousel">
+
                                 <ul>
+
+
                                     <li>
                                         <div class="grid_5 txt-al suffix_1 marg-left-0">
                                             <img src="fotos/encebollado2.png" alt="" class="image top-5">
                                             <h3 class="top-1">Encebollado</h3>
-                                            <a href="#" class="button top-1 bot">
-                                                <details>
-                                                    <summary>Leer receta</summary>
-                                                    <div>
-                                                        <label class="top-5">Ingredientes:</label>
-                                                        <p class="fontejusto top-5"> pejelagartos</p>
-                                                        <label class="top-5">Pasos: </label>
-                                                        <p class="fontejusto top-5"> Meter todo a la olla</p>
-
-                                                    </div>
-                                                </details>
+                                            <a href="#modal1" class="button top-1 bot">Leer receta
                                                 <span></span>
                                             </a>
-
+                                            <div id="modal1" class="modalDialog">
+                                                <div>
+                                                    <a href="#close" title="Close" class="close">X</a>
+                                                    <h2>Ingredientes:</h2>
+                                                    <p class="fontejusto">* Albacora<br>* Yuca<br>* Cebolla<br>* Cilantro</p>
+                                                    <h2>Pasos:</h2>
+                                                    <p class="fontejusto">Mezclar todos los ingredientes junto al caldo de pescado</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="grid_5 txt-al suffix_1">
                                             <img src="fotos/llapingacho2.png" alt="" class="image top-5">
                                             <h3 class="top-1">Llapingacho</h3>
-                                            <a href="#" class="button top-1 bot">
-                                                <details>
-                                                    <summary>Leer receta</summary>
-                                                    <div>
-                                                        <label class="top-5">Ingredientes:</label>
-                                                        <p class="fontejusto top-5"> De todo un poco</p>
-                                                        <label class="top-1">Pasos: </label>
-                                                        <p class="fontejusto top-5"> Meter todo a la olla</p>
-
-                                                    </div>
-                                                </details>
+                                            <a href="#modal2" class="button top-1 bot">Leer receta
                                                 <span></span>
                                             </a>
+                                            <div id="modal2" class="modalDialog">
+                                                <div>
+                                                    <a href="#close" title="Close" class="close">X</a>
+                                                    <h2>Ingredientes:</h2>
+                                                    <p class="fontejusto">* Huevo <br>* Patacones<br>* Papa horneada</p>
+                                                    <h2>Pasos:</h2>
+                                                    <p class="fontejusto">Freir el huevo y colocar con el resto de ingredientes en el plato
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="clear"></div>
                                     </li>
@@ -115,37 +123,33 @@
                                         <div class="grid_5 txt-al suffix_1 marg-left-0">
                                             <img src="fotos/caldo-bola2.png" alt="" class="image top-5">
                                             <h3 class="top-1">Caldo de bola</h3>
-                                            <a href="#" class="button top-1 bot">
-                                                <details>
-                                                    <summary>Leer receta</summary>
-                                                    <div>
-                                                        <label class="top-5">Ingredientes:</label>
-                                                        <p class="fontejusto top-5"> * Platano verde<br>* Carne de res</p>
-                                                        <label class="top-5">Pasos: </label>
-                                                        <p class="fontejusto top-5"> Rellenar la bola con carne</p>
-
-                                                    </div>
-                                                </details>
+                                            <a href="#modal3" class="button top-1 bot">Leer receta
                                                 <span></span>
                                             </a>
-
+                                            <div id="modal3" class="modalDialog">
+                                                <div>
+                                                    <a href="#close" title="Close" class="close">X</a>
+                                                    <h2>Ingredientes:</h2>
+                                                    <p class="fontejusto">* Platano verde<br>* Carne de res</p>
+                                                    <h2>Pasos:</h2>
+                                                    <p class="fontejusto">Rellenar la bola con carne y colocarla en el caldo</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="grid_5 txt-al suffix_1">
                                             <img src="fotos/hornado2.png" alt="" class="image top-5">
                                             <h3 class="top-1">Hornado</h3>
-                                            <a href="#" class="button top-1 bot">
-                                                <details>
-                                                    <summary>Leer receta</summary>
-                                                    <div>
-                                                        <label class="top-5">Ingredientes:</label>
-                                                        <p class="fontejusto top-5">* Chancho <br>* Mote</p>
-                                                        <label class="top-1">Pasos: </label>
-                                                        <p class="fontejusto top-5"> Hornear el chancho y meter la cáscara</p>
-
-                                                    </div>
-                                                </details>
-                                                <span></span>
+                                            <a href="#modal4" class="button top-1 bot">Leer receta<span></span>
                                             </a>
+                                            <div id="modal4" class="modalDialog">
+                                                <div>
+                                                    <a href="#close" title="Close" class="close">X</a>
+                                                    <h2>Ingredientes:</h2>
+                                                    <p class="fontejusto">* Chancho <br>* Mote</p>
+                                                    <h2>Pasos:</h2>
+                                                    <p class="fontejusto">Hornear el chancho y mezclar con el mote y la ensalada</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="clear"></div>
                                     </li>
@@ -154,42 +158,44 @@
                                         <div class="grid_5 txt-al suffix_1 marg-left-0">
                                             <img src="fotos/cevichemixto2.png" alt="" class="image top-5">
                                             <h3 class="top-1">Ceviche mixto</h3>
-                                            <a href="#" class="button top-1 bot">
-                                                <details>
-                                                    <summary>Leer receta</summary>
-                                                    <div>
-                                                        <label class="top-5">Ingredientes:</label>
-                                                        <p class="fontejusto top-5"> * Varios mariscos<br>* Camote</p>
-                                                        <label class="top-5">Pasos: </label>
-                                                        <p class="fontejusto top-5"> Curtir los mariscos con limón real</p>
-
-                                                    </div>
-                                                </details>
+                                            <a href="#modal5" class="button top-1 bot">Leer receta
                                                 <span></span>
                                             </a>
-
+                                            <div id="modal5" class="modalDialog">
+                                                <div>
+                                                    <a href="#close" title="Close" class="close">X</a>
+                                                    <h2>Ingredientes:</h2>
+                                                    <p class="fontejusto">* Varios mariscos<br>* Camote<br>* Lechuga</p>
+                                                    <h2>Pasos:</h2>
+                                                    <p class="fontejusto">Curtir los mariscos con limón real y colocarlos de forma ordenada
+                                                        en el plato</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="grid_5 txt-al suffix_1">
                                             <img src="fotos/motepillo2.png" alt="" class="image top-5">
                                             <h3 class="top-1">Mote Pillo</h3>
-                                            <a href="#" class="button top-1 bot">
-                                                <details>
-                                                    <summary>Leer receta</summary>
-                                                    <div>
-                                                        <label class="top-5">Ingredientes:</label>
-                                                        <p class="fontejusto top-5">* Mote cocinado <br>* Huevos</p>
-                                                        <label class="top-1">Pasos: </label>
-                                                        <p class="fontejusto top-5">Mezclar el mote con el huevo revuelto</p>
-
-                                                    </div>
-                                                </details>
+                                            <a href="#modal6" class="button top-1 bot">Leer receta
                                                 <span></span>
                                             </a>
+                                            <div id="modal6" class="modalDialog">
+                                                <div>
+                                                    <a href="#close" title="Close" class="close">X</a>
+                                                    <h2>Ingredientes:</h2>
+                                                    <p class="fontejusto">* Mote cocinado <br>* Huevos</p>
+                                                    <h2>Pasos:</h2>
+                                                    <p class="fontejusto">Mezclar el mote con el huevo revuelto</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="clear"></div>
                                     </li>
+                                    <li>
+                                        <div onload="mostrarRecetas()"></div>
+
+                                    </li>
                                 </ul>
-                                
+
                             </div>
                             <a id="prev" class="button">Anterior<span></span></a>
                             <a id="next" class="button">Siguiente<span></span></a>
